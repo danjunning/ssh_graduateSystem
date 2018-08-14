@@ -1,0 +1,89 @@
+.or-list{
+    margin-left: 20px;
+    width: 1000px;
+}
+.list-header{
+    margin-top: 2px;
+    border-bottom: 2px solid #F5F5F5;
+}
+.header-title{
+    font-size: 21px;
+}
+.refund-single{
+    margin-top: 10px;
+    height: 150px;
+    width: 900px;
+    border: 1px solid #E4EAEE;
+}
+.refund-single:hover{
+    border: 1px solid #00BA97;
+}
+.re-header{
+    height: 30px;
+    background-color: #EAF8FF;
+}
+.re-header .sp-date{
+    font-size: 14px;
+}
+.re-header .sp-num{
+    font-size: 14px;
+}
+.re-name,.re-img,.re-time,.re-price,.re-status,.re-operate{
+    margin-top: 2px;
+    float:left;
+}
+
+.re-img img{
+    width: 110px;
+    height: 6rem;
+    border: 1px solid #ffffff ;
+}
+.re-name{
+    margin-left: 10px;
+    width: 250px;
+    height:6rem;
+    font-size: 13px;
+}
+.re-name p,span{
+    font-size: 13px;
+}
+.re-price{
+    margin-left: 10px;
+    width: 100px;
+    height:6rem;
+}
+.re-time{
+    margin-left: 10px;
+    width: 150px;
+    height:6rem;
+}
+.count-price{
+    font-size: 15px;
+    color: red;
+}
+
+.re-operate{
+    margin-left: 10px;
+    width: 100px;
+    height:6rem;
+}
+a.re-detail{
+    font-size: 13px;
+    color: #0000ff;
+}
+a.re-detail{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    outline: none;
+}
+a.re-detail:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.pages{
+    margin-top: 10px;
+    height: 80px;
+    border: 1px red solid;
+}

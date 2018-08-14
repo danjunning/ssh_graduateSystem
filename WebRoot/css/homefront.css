@@ -1,0 +1,204 @@
+#search-div{
+    /* border: 1px solid red;*/
+    height: 120px;
+}
+.search-left,.search-center,.search-right{float:left;/*border: 1px solid #0000ff;*/}
+.search-left{margin-top: 5px;margin-left:40px;width: 250px;height: 100px}
+.search-center{margin-top: 5px;margin-left:10px;width: 750px;height: 100px;}
+.search-right{margin:5px;width: 250px;height: 100px;}
+.search-center form{
+    /*border: 1px solid #0000ff;*/
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+form .form-text,.form-sub{float:left}
+.form-text input{width: 510px;height: 35px;border: 2px solid #37A0DB}
+.form-sub input{
+    width: 55px;
+    height:34px;
+    line-height:6px;
+    text-align:center;
+    background:none repeat scroll 0% 0% #37A0DB;
+    border-radius:1px;
+    font-size:16px;
+    outline:medium none;
+    border: none;
+    color: #ffffff;
+
+}
+.carousel-div{
+    /* border: 1px solid red; */
+    height: 405px;
+    margin-left: 15px;
+}
+
+.classify-div{
+    /* border: 1px solid red; */
+    height: 400px;width: 240px;
+    background-color: #454545;
+}
+.classify-div ul{
+    padding: 0px;
+
+}
+.classify-div ul li{
+    list-style: none;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #4D4D4D;
+    color: white;
+    font-size:15px;
+}
+.classify-div ul li:hover{
+	color:black;
+}
+.classify-div ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.classify-div ul li a:HOVER{
+    text-decoration: none;
+    color:red;
+}
+.classify-div ul li a i{
+    margin-left: 50px;
+}
+.classify-div,.layui-carousel{float: left}
+.floor{background-color: #F6F6F6}
+.floor-week{margin-left: 15px;height: 570px;b/* order: 1px solid red; */background-color: #F6F6F6}
+.floor-one{margin-left: 15px;height: 550px;/* border: 1px solid red; */background-color: #F6F6F6}
+.floor-two{margin-left: 15px;height: 550px;/* border: 1px solid red; */background-color: #F6F6F6}
+.floor-three{margin-left: 15px;height: 550px;/* border: 1px solid red; */background-color: #F6F6F6}
+.floor-one,.floor-two,.floor-three{margin-top: 20px}
+.floor p.title{margin-left:30px;font-size: 20px;font-weight: bold;border-bottom: 1px solid #DDDDDD}
+.floor-left,.floor-right{float:left}
+.floor-left{
+    margin:5px;
+   /*  border: 1px solid #000000; */
+    height:530px ;
+    width: 250px;
+    background: #5CB9FF;
+}
+.floor-left-top{
+    margin:5px;
+    /* border: 1px solid #000000; */
+    height:310px ;
+    width: 240px;
+}
+.floor-left-bottom{
+    margin:5px;
+   /*  border: 1px solid #000000; */
+    height:180px ;
+    width: 240px;
+}
+.floor-right{
+    margin:2px;
+    /* border: 1px solid #000000; */
+    height:530px ;
+    width: 1020px;
+    background-color: #F6F6F6
+}
+
+/*dl样式*/
+.floor dl{
+    float: left;/*将所有dl并排显示*/
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 228px;
+    height: 250px;
+    background: #ffffff;
+}
+.floor dl:hover{
+    width: 230px;
+    height: 250px;
+    -webkit-box-shadow: #999 0px 0px 8px;
+    -moz-box-shadow: #999 0px 0px 8px;
+    box-shadow: #999 0px 0px 8px;
+}
+/*dt样式(商品的图片放在dt内)*/
+.floor dt{
+    height: 150px;
+    text-align: center;
+    /*内容垂直居中，只对具有valign属性的标签有效*/
+    vertical-align: middle;
+}
+.floor dt img{
+    width: 180px;
+    height: 180px;
+    border: 1px solid #DDDDDD;
+}
+/*dd样式(商品的文字放在dd内)*/
+.floor dd{
+    margin-top: 35px;
+    border: 1px solid #DDDDDD;
+    height:30px;
+    text-align:center;
+
+}
+.floor dd{
+    font-size: 14px;
+    width:225px;
+    height:40px;
+    overflow:hidden; /*超出的部分隐藏起来。*/ 
+	white-space:nowrap;/*不显示的地方用省略号...代替*/
+	text-overflow:ellipsis;/* 支持 IE */
+
+}
+.floor dd p.price{
+    font-weight: bold;
+    font-size: 18px;
+    color: red;}
+
+.footer{
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
+
+}
+
+.foot-on{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 310px;
+}
+.foot-up{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 100px;
+}
+.foot-item{
+    float:left;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-right: 1px solid #DDDDDD;
+    width: 200px;
+    height: 185px;
+}
+
+/*无序列表与列表项消除间距*/
+.foot-item p,ul, li{
+
+    margin: 0px;
+    padding: 0px;
+}
+.foot-item p{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    line-height: 10px;/*行高*/
+    font-weight: bold;
+    font-size: 15px;
+}
+.foot-item li{
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    list-style:none; /*去掉列表项的样式(小圆点)*/
+    line-height: 10px;/*行高*/
+    font-size: 13px;
+}

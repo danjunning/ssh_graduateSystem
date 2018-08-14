@@ -1,0 +1,293 @@
+product-list#search-div{
+    /* border: 1px solid red;*/
+    height: 120px;
+}
+.search-left,.search-center,.search-right{float:left;/*border: 1px solid #0000ff;*/}
+.search-left{margin-top: 5px;margin-left:40px;width: 250px;height: 100px;}
+.search-center{margin-top: 5px;margin-left:10px;width: 750px;height: 100px;}
+.search-right{margin:5px;width: 250px;height: 100px;}
+.search-center form{
+    /*border: 1px solid #0000ff;*/
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+form .form-text,.form-sub{float:left}
+.form-text input{width: 510px;height: 30px;border: 2px solid #37A0DB}
+.form-sub input{
+    width: 55px;
+    height:34px;
+    line-height:6px;
+    text-align:center;
+    background:none repeat scroll 0% 0% #37A0DB;
+    border-radius:1px;
+    font-size:16px;
+    outline:medium none;
+    border: none;
+    color: #ffffff;
+}
+hr{ color: #37A0DB;
+    background-color: #37A0DB;
+    height: 2px;
+}
+div.category-list{
+
+    width: 1250px;
+    
+    overflow: hidden;
+    margin-left: 40px;
+}
+.category-item{
+    border-bottom: 1px solid #DDDDDD;
+    float: left; /*所有列表项水平排列*/
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    list-style:none; /*去掉列表项的样式(小圆点)*/
+    line-height: 40px;/*行高*/
+    font-weight: bold;/*字体加粗*/
+    font-size: 15px;
+}
+.category-item:hover{
+    background-color: #37A0DB;
+    color: #ffffff;
+}
+.category-item a:hover{color: #ffffff}
+
+.pro-container{
+	margin-top: 10px;
+}
+.pro-container-left,.pro-container-right{}
+.pro-container-left{
+	clear:both;
+	float:left;
+    border: 1px solid #DDDDDD;
+    width: 1000px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.pro-container-right{
+    border: 1px solid #DDDDDD;
+    float:left;
+    width: 240px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+.sort-select{
+    border: 1px solid #DDDDDD;
+    height: 40px;
+}
+.sort-select ul{margin-left: 20px;}
+.sort-select li{
+
+    float: left; /*所有列表项水平排列*/
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    list-style:none; /*去掉列表项的样式(小圆点)*/
+    line-height: 40px;/*行高*/
+    font-size: 13px;
+}
+.sort-select li a:hover{color: #0000ff}
+/*dl样式*/
+.product-list{
+    margin-top: 10px;
+    margin-left:25px;
+    overflow: hidden;}
+.product-list dl{
+    border: 1px solid #ddd;
+    float: left;/*将所有dl并排显示*/
+    width: 235px;
+    height: 305px;
+    margin-top: 15px;
+    margin-left: 2px;
+}
+ .product-list dl:hover{border: 1px solid #37A0DB;} 
+/*dt样式(商品的图片放在dt内)*/
+.product-list dt{
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    height: 165px;
+    text-align: center;
+    /*内容垂直居中，只对具有valign属性的标签有效*/
+    vertical-align: middle;
+}
+.product-list dt img{
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+}
+/*dd样式(商品的文字放在dd内)*/
+.product-list dd{
+    border: 1px solid #fff;
+    height:55px;
+ 	word-wrap:break-word;  
+    word-break:break-all;  
+    overflow: hidden; 
+    width: 190px;
+    margin-left:25px;
+    
+}
+.product-list dd span.price{
+    margin-left: 5px;
+    float: left;
+    font-size: 20px;
+    color: red;
+}
+.product-list dd span.sale{
+    margin-right: 5px;
+    float:right;
+    font-size: 13px;
+}
+.product-pages{
+    margin-top: 10px;
+    height: 60px;    
+}
+.pages{
+    margin-top: 30px;
+    margin-left: 300px;
+    
+}
+.pageIndex{
+	width: 30px;
+}
+.product-pages a{
+    border: 1px solid  #ddd;
+    padding: 1px 5px 1px 5px;
+    margin-left:5px ;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.product-pages a.current{
+    border: none;
+    text-decoration: underline;
+    color: blue;
+}
+.product-pages a:hover{
+    color: #f00;
+    border: none;
+}
+#link-page-submit{
+	border: 1px solid #ddd; 
+	border-radius: 0px;
+}
+#link-page-submit:HOVER{
+	border: 1px solid red; 
+	border-radius: 0px;
+}
+
+.advertise-list dl{
+    border: 1px solid #ddd;
+    float: left;/*将所有dl并排显示*/
+    width: 235px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+.advertise-select{
+    border: 1px solid #DDDDDD;
+    height: 40px;
+    background-color:#F7F7F7; 
+}
+.advertise-select span{margin-top:5px;line-height: 40px;margin-left:10px;}
+.advertise-list dl:hover{border: 1px solid #37A0DB;}
+/*dt样式(商品的图片放在dt内)*/
+.advertise-list dt{
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    height: 165px;
+    text-align: center;
+    /*内容垂直居中，只对具有valign属性的标签有效*/
+    vertical-align: middle;
+}
+.advertise-list dt img{
+    width: 160px;
+    height: 160px;
+}
+/*dd样式(商品的文字放在dd内)*/
+.advertise-list dd.adv-name{
+    border: 1px solid #fff;
+    height:55px;
+    width: 195px;
+    margin-left:20px;
+    word-wrap:break-word;  
+    word-break:break-all;  
+    overflow: hidden;
+}
+.advertise-list dd.adv-price{
+    border: 1px solid #fff;
+    height:50px;
+    width: 190px;
+    margin-left:25px;
+    word-wrap:break-word;  
+    word-break:break-all;  
+    overflow: hidden;
+}
+.advertise-list dd span.price{
+    margin-left: 5px;
+    float: left;
+    font-size: 20px;
+    color: red;
+}
+.advertise-list dd span.sale{
+    margin-right: 5px;
+    float:right;
+    font-size: 13px;
+}
+
+.footer{
+	clear:both;
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 1px solid #000000;
+    margin-top: 30px;
+
+}
+
+.foot-on{
+	clear:both;
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 310px;
+}
+.foot-up{
+	clear:both;
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 100px;
+}
+.foot-item{
+    float:left;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-right: 1px solid #DDDDDD;
+    width: 200px;
+    height: 185px;
+}
+
+/*无序列表与列表项消除间距*/
+.foot-item p,ul, li{
+    margin: 0px;
+    padding: 0px;
+}
+.foot-item p{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    line-height: 10px;/*行高*/
+    font-weight: bold;
+    font-size: 15px;
+}
+.foot-item li{
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    list-style:none; /*去掉列表项的样式(小圆点)*/
+    line-height: 10px;/*行高*/
+    font-size: 13px;
+}

@@ -1,0 +1,99 @@
+.or-list{
+    margin-left: 20px;
+    width: 1000px;
+}
+.or-single{
+    margin-top: 10px;
+    height: 150px;
+    width: 850px;
+    border: 1px solid #E4EAEE;
+}
+.or-single:hover{
+    border: 1px solid #00BA97;
+}
+.or-header{
+    height: 30px;
+    background-color: #EAF8FF;
+}
+.or-header .sp-date{
+    font-size: 14px;
+}
+.or-header .sp-num{
+    font-size: 14px;
+}
+.or-select,.or-name,.or-img,.or-delete,.or-type,.or-price,.or-detail,.or-operate{
+    margin-top: 2px;
+    float:left;
+}
+
+.or-img img{
+    width: 110px;
+    height: 6rem;
+    border: 1px solid #ffffff ;
+}
+.or-name{
+    margin-left: 10px;
+    width: 250px;
+    height:6rem;
+}
+.or-name p a.link-detail{
+    font-size: 13px;
+    font-weight: bold;
+}
+.or-name p a.link-detail:hover{
+    color: red;
+}
+.or-type{
+    margin-left: 10px;
+    width: 100px;
+    height:6rem;
+}
+.or-price{
+    margin-left: 10px;
+    width: 100px;
+    height:6rem;
+}
+.count-price{
+    font-size: 20px;
+}
+.or-detail{
+    margin-left: 10px;
+    width: 100px;
+    height:6rem;
+}
+.or-detail a:hover{
+    color: red;
+}
+.or-operate{
+    margin-left: 10px;
+    width: 100px;
+    height:6rem;
+}
+a.pay{
+    margin-top: 5px;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 11px;
+    border: 1px #E4EAEE solid;
+    border-radius: 3px;
+    color: #000000;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    outline: none;
+}
+a.pay:hover{
+
+    border: 1px red solid;
+    cursor: pointer;
+}
+a.cancel:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.pages{
+    margin-top: 10px;
+    height: 80px;
+    border: 1px red solid;
+}

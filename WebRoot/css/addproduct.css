@@ -1,0 +1,24 @@
+div{border:1px solid #dd0000}
+table{
+
+
+}
+
+.t1{
+    border: 1px solid #D5D5D5;
+    width: 80px;
+    height: 50px;
+}
+.t2{
+    border: 1px solid #D5D5D5;
+    width: 100px;
+    height: 10px;
+}
+.t3{
+    border: 1px solid #D5D5D5;
+    width: 350px;
+    height: 10px;
+}
+input{
+    height: 20px;
+}

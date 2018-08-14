@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body {
+    background:#fff  no-repeat left top;
+
+    background-size:100%;
+    padding:0px;margin:0px auto;font-size:12px;font-family:"微软雅黑";}
+
+div[id=container]{height: 3000px;width: 1200px}
+
+#container div[id=d1]{margin: 5px; float: left; height: 40%;width: 98%}
+#header{margin: 10px;height: 5%;width: 98%}
+
+#header span[id=p1]{margin: 10px;font-size: 30px;float: left;height:30px;}
+#main{margin: 5px;height: 80%}
+#left{float: left;margin: 2px;width: 110px; height: 900px;}
+#right{float: left;margin: 3px;width: 500px;height: 900px;font-size: 15px;}
+#mes{float: left;margin:2px;width: 400px;height: 900px;font-size: 15px;}
+#main label{
+
+    margin-top: 11px;
+    float: right;
+    width:100px;
+    padding-right:10px;
+    text-align:right;
+    text-indent:15px;
+    line-height:30px;
+    height:32px;
+    font-size:15px;}
+#main input[id]{ margin-top: 14px;
+    line-height:30px;
+    height:30px;
+    width:250px;
+    border:#ebebeb 1px solid;
+    text-indent:5px;
+}
+#main textarea{ margin-top: 10px;
+    line-height:30px;
+    height:200px;
+    width:480px;
+    border:#ebebeb 1px solid;
+    
+}
+#main input[name=sex]{ margin-top: 10px;
+    line-height:30px;
+    height:15px;
+    width:15px;
+    border:#ebebeb 1px solid;
+    text-indent:5px;}
+
+

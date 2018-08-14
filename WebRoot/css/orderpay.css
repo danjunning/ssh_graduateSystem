@@ -1,0 +1,112 @@
+.web-logo{
+    margin-top: 20px;
+}
+.web-logo .imgae-wrap{
+    margin-left: 100px;
+}
+.orderpay-wrap{margin-top: 50px;}
+
+.orderpay-wrap .order-msg{
+    border: 1px solid #DDDDDD;
+    margin-left: 100px;
+    width: 1100px;
+    background-color: #FAFAFA;
+}
+.order-msg .msg-reminder{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.msg-reminder b{float:right;margin-right: 20px;color: red;font-size: 20px}
+.order-msg .msg-order-num{
+    font-size: 13px;
+    line-height: 40px;
+    margin-left: 30px;
+}
+.order-msg .msg-order-addr{
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.order-pay-operate{
+    border: 1px solid #DDDDDD;
+    margin-left: 100px;
+    width: 1100px;
+}
+.order-pay-operate .layui-form-item{
+    margin-top: 20px;
+}
+.order-pay-operate .pay-input{
+
+    font-size: 13px;
+    margin-left: 30px;
+}
+.pay-input p{
+    height: 30px;
+    line-height: 30px;
+}
+.pay-input button.pay-btn{
+    border: 1px solid #C82121;
+    margin-top: 10px;
+    width: 140px;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    background-color: #C82121;
+    letter-spacing: 4px;
+    outline:none;
+    cursor:pointer;
+}
+
+
+.footer{
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
+
+}
+
+.foot-on{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 310px;
+}
+.foot-up{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 100px;
+}
+.foot-item{
+    float:left;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-right: 1px solid #DDDDDD;
+    width: 200px;
+    height: 185px;
+}
+
+/*无序列表与列表项消除间距*/
+.foot-item p,ul, li{
+
+    margin: 0px;
+    padding: 0px;
+}
+.foot-item p{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    line-height: 10px;/*行高*/
+    font-weight: bold;
+    font-size: 15px;
+}
+.foot-item li{
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    list-style:none; /*去掉列表项的样式(小圆点)*/
+    line-height: 10px;/*行高*/
+    font-size: 13px;
+}

@@ -1,0 +1,97 @@
+.web-logo{
+    background-color: #FFF8EB;
+    margin-top: 20px;
+}
+.web-logo .imgae-wrap{
+    margin-left: 100px;
+}
+
+.Order_Details_style{ margin-bottom:15px;margin-left: 20px;}
+.Order_Details_style .Numbering,.Numbering{ border-bottom:1px dashed #ddd; height:40px; line-height:40px;}
+.Order_Details_style .Numbering b, .Numbering b{ color:#F60; font-size:18px; margin-left:5px;}
+
+.detailed_style{ position:relative;margin-left: 40px;}
+.detailed_style .Logistics_style,.detailed_style .Receiver_style,.detailed_style .product_style,
+.detailed_style .Total_style{ border:1px solid #dddddd; margin-bottom:15px;}
+.detailed_style .title_name {
+    height: 40px;
+    border-bottom: 1px solid #dddddd;
+    line-height: 40px;
+    font-size: 16px;
+    padding: 0px 20px;
+    background: #2a8bcc !important;
+
+    background-image: linear-gradient(to bottom, #ffffff 0, #ededed 100%) !important;
+    background-repeat: repeat-x !important;
+}
+.detailed_style .Info_style{ padding:0px 5px}
+.detailed_style .Info_style .label_name{ width:80px; text-align:right; float:left;}
+.detailed_style .Info_style .col-xs-3{ margin:10px 0px; position:relative;width: 200px;}
+.detailed_style .Info_style .col-xs-3 .o_content{width: 80px;height:20px;line-height: 20px;overflow: hidden;}
+.detailed_style .Info_style .product_info{ position:relative; border:1px solid #dddddd; width:495px; padding:0px 0px; margin:10px 5px; line-height:26px; float:left}
+.detailed_style .Info_style .product_info a{ display:block; float:left;}
+.detailed_style .Info_style .product_info a:hover{ color: red}
+.detailed_style .Info_style .product_info a.img_link{ width:204px; height:204px; border-right:1px solid #dddddd; padding:1px;}
+.detailed_style .Info_style .product_info a.img_link img{ width:200px; height:200px;}
+.detailed_style .Info_style .product_info span{ float:left; display:block; width:265px; margin-left:10px;}
+.detailed_style .Info_style .product_info b{ color: #FCB714; font-weight:normal}
+.detailed_style .Info_style .product_info b.price{ font-size:18px; color: #F33}
+.detailed_style .Info_style .product_info b i{ font-size:12px}
+.Total_style{ padding:10px; }
+.Total_style .Total_m_style{font-size:16px; border-top:1px solid #dddddd; line-height:40px; height:40px;}
+.Total_style .Total{ margin-right:10px;}
+.Total_style b{ color:#F33; font-weight:600}
+.detailed_style .Logistics_style .prompt{ font-size:18px; text-align:center; padding:10px;}
+
+
+.footer{
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
+
+}
+
+.foot-on{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 310px;
+}
+.foot-up{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 100px;
+}
+.foot-item{
+    float:left;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-right: 1px solid #DDDDDD;
+    width: 200px;
+    height: 185px;
+}
+
+/*无序列表与列表项消除间距*/
+.foot-item p,ul, li{
+
+    margin: 0px;
+    padding: 0px;
+}
+.foot-item p{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    line-height: 10px;/*行高*/
+    font-weight: bold;
+    font-size: 15px;
+}
+.foot-item li{
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    list-style:none; /*去掉列表项的样式(小圆点)*/
+    line-height: 10px;/*行高*/
+    font-size: 13px;
+}

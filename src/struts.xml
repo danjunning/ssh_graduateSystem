@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+  <package name="dan" namespace="/" extends="struts-default">
+  	<interceptors>
+  		<interceptor name="logininterceptor" class="cn.nsu.inteceptors.LoginInterceptor"></interceptor>
+  		<interceptor name="adminlogininterceptor" class="cn.nsu.inteceptors.AdminLoginInterceptor"></interceptor>
+  	</interceptors>
+    <action name="adminlogin"  class="adminlogin" method="adminlogin">
+      <result name="ok" type="dispatcher">/index.jsp</result>
+      <result name="fail" type="dispatcher">/login.jsp</result>
+    </action>
+    <!--typeAction  -->
+    <action name="getAllType"  class="typeAction" method="getAllType">
+   		<interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/typeFirst.jsp</result>
+      <result name="fail" type="dispatcher">/typeFirst.jsp</result>
+      <result name="failure" type="dispatcher">/login.jsp</result>
+    </action>
+    <action name="addType"  class="typeAction" method="addType">
+      <interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/typeFirst.jsp</result>
+      <result name="fail" type="dispatcher">/Add_firstType.jsp</result>
+      <result name="failure" type="dispatcher">/login.jsp</result>
+    </action>
+    <action name="deleteType"  class="typeAction" method="deleteType">
+      <result name="ok" type="dispatcher">/typeFirst.jsp</result>
+      <result name="fail" type="dispatcher">/typeFirst.jsp</result>
+    </action>
+    
+    <!--subtypeAction  -->
+    <action name="getAllSubType"  class="subtypeAction" method="getAllSubType">
+      <interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/typeSecond.jsp</result>
+      <result name="fail" type="dispatcher">/typeSecond.jsp</result>
+      <result name="failure" type="dispatcher">/login.jsp</result>
+    </action>
+    <action name="searchSubType"  class="subtypeAction" method="searchSubType">
+      <result name="ok" type="dispatcher">/typeSecond.jsp</result>
+      <result name="fail" type="dispatcher">/typeSecond.jsp</result>
+    </action>
+    <action name="deleteSubType"  class="subtypeAction" method="deleteSubType">
+      <result name="ok" type="dispatcher">/typeSecond.jsp</result>
+      <result name="fail" type="dispatcher">/typeSecond.jsp</result>
+    </action>
+    <action name="addSubType"  class="subtypeAction" method="addSubType">
+      <result name="ok" type="dispatcher">/typeSecond.jsp</result>
+      <result name="fail" type="dispatcher">/typeSecond.jsp</result>
+    </action>
+    
+    <!--productManage  -->
+    <action name="getAllPro"  class="productManage" method="getAllPro">
+      <interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+	  <interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/productList.jsp</result>
+      <result name="fail" type="dispatcher">/productList.jsp</result>
+      <result name="failure" type="dispatcher">/login.jsp</result>
+    </action>
+    <action name="deletePro"  class="productManage" method="deletePro">
+      <result name="ok" type="dispatcher">/productList.jsp</result>
+      <result name="fail" type="dispatcher">/productList.jsp</result>
+    </action>  
+    <action name="getFType"  class="productManage" method="getFType">
+      <interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/Addproduct.jsp</result>
+      <result name="fail" type="dispatcher">/Addproduct.jsp</result>
+      <result name="failure" type="dispatcher">/login.jsp</result>
+    </action> 
+    <action name="getSubypeByTid"  class="productManage" method="getSubypeByTid">
+       <result name="ok" type="dispatcher">/Addproduct.jsp</result>    
+    </action> 
+    <action name="addPro"  class="productManage" method="addPro">
+      <param name="savePath">/upload</param>
+      <result name="ok" type="dispatcher">/productList.jsp</result>
+      <result name="fail" type="dispatcher">/productList.jsp</result>
+    </action>  
+    <action name="getProByName"  class="productManage" method="getProByName">
+      <result name="ok" type="dispatcher">/productList.jsp</result>
+      <result name="fail" type="dispatcher">/productList.jsp</result>
+    </action>
+    <action name="getProById"  class="productManage" method="getPro">
+      <result name="ok" type="dispatcher">/Updateproduct.jsp</result>
+      <result name="fail" type="dispatcher">/productList.jsp</result>
+    </action>
+    <action name="updatePrice"  class="productManage" method="updatePrice">
+
+    </action>
+    <action name="updateStock"  class="productManage" method="updateStock">
+
+    </action>
+    
+    <!--"AdvertiseManage"  -->
+    <action name="getAllAdver"  class="AdvertiseManage" method="getAllAdver">
+      <result name="ok" type="dispatcher">/adsList.jsp</result>
+      <result name="fail" type="dispatcher">/adsList.jsp</result>
+    </action>
+    <action name="deleteAdver"  class="AdvertiseManage" method="deleteAdver">
+      <result name="ok" type="dispatcher">/adsList.jsp</result>
+      <result name="fail" type="dispatcher">/adsList.jsp</result>
+    </action>
+    <action name="addAdver"  class="AdvertiseManage" method="addAdver">
+      <result name="ok" type="dispatcher">/adsList.jsp</result>
+      <result name="fail" type="dispatcher">/adsList.jsp</result>
+    </action>
+    
+    <!-- AdminOrderManage -->
+    <action name="getWsendOrList"  class="AdminOrderManage" method="getWsendOrList">
+      <result name="ok" type="dispatcher">/orderedList_pre.jsp</result>
+      <result name="fail" type="dispatcher">/orderedList_pre.jsp</result>
+      
+    </action>
+    <action name="getReceicingOrList"  class="AdminOrderManage" method="getReceicingOrList">
+      <result name="ok" type="dispatcher">/orderList_center.jsp</result>
+      <result name="failure" type="dispatcher">/login.jsp</result>
+    </action>
+    <action name="getReceivedOrList"  class="AdminOrderManage" method="getReceivedOrList">
+      <result name="ok" type="dispatcher">/orderedList_ed.jsp</result>
+      <result name="fail" type="dispatcher">/orderedList_ed.jsp</result>
+    </action>   
+    
+    <action name="getWsendOrByNum"  class="AdminOrderManage" method="getWsendOrByNum">
+      <result name="ok" type="dispatcher">/orderedList_pre.jsp</result>
+      <result name="fail" type="dispatcher">/orderedList_pre.jsp</result>
+    </action>
+    <action name="getReceivingOrByNum"  class="AdminOrderManage" method="getReceivingOrByNum">
+      <result name="ok" type="dispatcher">/orderedList_pre.jsp</result>
+      <result name="fail" type="dispatcher">/orderedList_pre.jsp</result>
+    </action>
+    
+    <action name="sendGood"  class="AdminOrderManage" method="sendGood">
+      <result name="ok" type="dispatcher">/orderedList_pre.jsp</result>
+      <result name="fail" type="dispatcher">/orderedList_pre.jsp</result>
+    </action>
+    <action name="showOrderDetai"  class="AdminOrderManage" method="showOrderDetai">
+      <result name="ok" type="dispatcher">/orderDetail.jsp</result>
+      <result name="fail" type="dispatcher">/orderDetail.jsp</result>
+    </action>
+    
+    <!--AdminRefManage  -->
+    <action name="getRefundOrList"  class="AdminRefManage" method="getRefundOrList">
+      <interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+	  <interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/Refund.jsp</result>
+      <result name="fail" type="dispatcher">/Refund.jsp</result>
+    </action>
+    <action name="getAllrefundedList"  class="AdminRefManage" method="getAllrefundedList">
+      <interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/Refund.jsp</result>
+      <result name="fail" type="dispatcher">/orderedList_ed.jsp</result>
+    </action>
+    <action name="getAllUnrefundList"  class="AdminRefManage" method="getAllUnrefundList">
+    	<interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/Refund.jsp</result>
+      <result name="fail" type="dispatcher">/orderedList_ed.jsp</result>
+    </action>
+    <action name="getRefundOrByNum"  class="AdminRefManage" method="getRefundOrByNum">
+    <interceptor-ref name="adminlogininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+      <result name="ok" type="dispatcher">/Refund.jsp</result>
+      <result name="fail" type="dispatcher">/Refund.jsp</result>
+    </action>
+    <action name="refund"  class="AdminRefManage" method="refund">
+      <result name="ok" type="dispatcher">/Refund.jsp</result>
+      <result name="fail" type="dispatcher">/Refund.jsp</result>
+    </action>
+    
+    <!--EvaluateManage  -->
+    <action name="getAllEva"  class="EvaluateManage" method="getAllEva">
+      <result name="ok" type="dispatcher">/evaluateList.jsp</result>
+      <result name="fail" type="dispatcher">/evaluateList.jsp</result>
+    </action>
+    
+    <!--homeAction  -->
+    <action name="home" class="homeAction" method="home">
+    	<result name="ok">/front/home.jsp</result>
+    </action>
+    <action name="getProByTyId" class="homeAction" method="getProByTyId">
+    	<result name="ok">/front/index.jsp</result>
+    </action>
+    
+    <!-- IndexAction -->
+    <action name="searchPro" class="IndexAction" method="searchPro">
+    	<result name="ok">/front/index.jsp</result>
+    </action>
+    <action name="searchProBySubtyId" class="IndexAction" method="searchProBySubtyId">
+    	<result name="ok">/front/index.jsp</result>
+    </action>
+    <action name="saleSort" class="IndexAction" method="saleSort">
+    	<result name="ok">/front/index.jsp</result>
+    </action>
+    <action name="upPriceSort" class="IndexAction" method="upPriceSort">
+    	<result name="ok">/front/index.jsp</result>
+    </action>
+    <action name="onPriceSort" class="IndexAction" method="onPriceSort">
+    	<result name="ok">/front/index.jsp</result>
+    </action>
+    
+    <!-- PageProductListAction -->
+    <action name="pagePro" class="PageProductListAction" method="pagePro">
+    	<result name="ok">/front/index.jsp</result>
+    </action>
+    
+    <!-- productAction -->
+    <action name="showDetail" class="productAction" method="showDetail">
+    	<result name="ok">/front/productDetail.jsp</result>
+    </action>
+    
+    <!-- userLogRegAction -->
+    <action name="register" class="userLogRegAction" method="register">
+    	<result name="ok">/front/login.jsp</result>
+    </action>
+    <action name="login" class="userLogRegAction" method="login"> 	
+    	<result name="ok" type="redirectAction">
+　　　	　<param name="actionName">home</param>
+　        　</result>
+    	<result name="fail">/front/login.jsp</result>
+    </action>
+    <action name="logout" class="userLogRegAction" method="logout">
+    	<result name="ok">/front/login.jsp</result>
+    </action>
+    
+    <!-- ShopcartAction -->
+    <action name="getCart" class="ShopcartAction" method="getCart"> 	
+    	<interceptor-ref name="logininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<result name="failure" type="dispatcher">/front/login.jsp</result>
+    	<result name="ok">/front/shopcart.jsp</result>
+    </action>
+    <action name="addCart" class="ShopcartAction" method="addCart"> 
+    	<interceptor-ref name="logininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<result name="failure" type="dispatcher">/front/login.jsp</result>	
+    	<result name="ok">/front/shopcart.jsp</result>
+    </action>
+    <action name="changeAmount" class="ShopcartAction" method="changeAmount"> 	
+    	<result name="ok">/front/shopcart.jsp</result>
+    </action>
+    <action name="deleteCart" class="ShopcartAction" method="deleteCart"> 	
+    	<result name="ok">/front/shopcart.jsp</result>
+    </action>
+    
+    <!-- userManageAction -->
+    <action name="manageList" class="userManageAction" method="manageList"> 
+    	<interceptor-ref name="logininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<result name="failure" type="dispatcher">/front/login.jsp</result>	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="OrderList" class="userManageAction" method="OrderList"> 
+    	<interceptor-ref name="logininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<result name="failure" type="dispatcher">/front/login.jsp</result>	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="saveUserinfo" class="userManageAction" method="saveUserinfo"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="uploadPhoto"  class="userManageAction" method="upload">
+      <param name="savePath">/upload</param>
+      <result name="ok" type="dispatcher">/front/personManage.jsp</result>
+      <result name="fail" type="dispatcher">/front/personManage.jsp</result>
+    </action>
+    <action name="updatePsd" class="userManageAction" method="updatePsd">
+    	<result name="ok">/front/login.jsp</result>
+    	<result name="fail">/front/pswModify.jsp</result>
+    </action>
+    
+    <!-- AddressManageAction -->
+    <action name="addAddress" class="AddressManageAction" method="addAddress"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="lessAddress" class="AddressManageAction" method="lessAddress"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    
+    <!-- CreditManageAction -->
+    <action name="addCredit" class="CreditManageAction" method="addCredit"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="deleteCredit" class="CreditManageAction" method="deleteCredit"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="save" class="CreditManageAction" method="save"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <!-- OrderMangeAction -->
+    <action name="confirmOrder" class="OrderMangeAction" method="confirmOrder"> 
+    	<interceptor-ref name="logininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<result name="failure" type="dispatcher">/front/login.jsp</result>	
+    	<result name="ok">/front/orderComfire.jsp</result>
+    </action>
+    <action name="confirm" class="OrderMangeAction" method="confirm"> 
+    	<interceptor-ref name="logininterceptor"></interceptor-ref>
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		<result name="failure" type="dispatcher">/front/login.jsp</result>	
+    	<result name="ok">/front/orderPay.jsp</result>
+    </action>
+    <action name="placeOrder" class="OrderMangeAction" method="placeOrder"> 	
+    	<result name="ok">/front/orderPay.jsp</result>
+    </action>
+    <action name="payOrder" class="OrderMangeAction" method="payOrder"> 	
+    	<result name="ok">/front/payResult.jsp</result>
+    	<result name="fail">/front/orderPay.jsp</result>
+    </action>
+    <action name="detailOrder" class="OrderMangeAction" method="detailOrder"> 	
+    	<result name="ok">/front/orderDetail.jsp</result>
+    </action>
+    <action name="orderDetail" class="OrderMangeAction" method="orderDetail"> 	
+    	<result name="ok">/front/orderDetail.jsp</result>
+    </action>
+    <action name="confirmReceived" class="OrderMangeAction" method="confirmReceived"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="preCancel" class="OrderMangeAction" method="preCancel"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="edCancel" class="OrderMangeAction" method="edCancel"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="deleteOrder" class="OrderMangeAction" method="deleteOrder"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    
+    <!-- PageOrderAction -->
+    <action name="pageAllorder" class="PageOrderAction" method="pageAllorder"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="pageUnPayorder" class="PageOrderAction" method="pageUnPayorder"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="pageWaitSendorder" class="PageOrderAction" method="pageWaitSendorder"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="pageWaitReceiveorder" class="PageOrderAction" method="pageWaitReceiveorder"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="pageReceivedorder" class="PageOrderAction" method="pageReceivedorder"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    
+    <!-- BalanceAction -->
+    <action name="balance" class="BalanceAction" method="balance"> 	
+    	<result name="ok">/front/ordersComfire.jsp</result>
+    </action>
+    <action name="placeOrders" class="BalanceAction" method="placeOrders"> 	
+    	<result name="ok">/front/ordersPay.jsp</result> 	
+    </action>
+    <action name="payOrders" class="BalanceAction" method="payOrders"> 	
+    	<result name="ok">/front/payResults.jsp</result>
+    	<result name="fail">/front/ordersPay.jsp</result>
+    </action>
+    
+    
+    <!-- EvaluateAction -->
+    <action name="addEvaluate" class="EvaluateAction" method="addEvaluate"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="deleteEvaluate" class="EvaluateAction" method="deleteEvaluate"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    <action name="getEvaluate" class="EvaluateAction" method="getEvaluate"> 	
+    	<result name="ok">/front/commentAdd.jsp</result>
+    </action>
+    <action name="pageEvaluate" class="EvaluateAction" method="pageEvaluate"> 	 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    
+    <!-- RefundAction -->
+    <action name="deleteOrders" class="RefundAction" method="deleteOrder"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    
+    <action name="pageRefund" class="RefundAction" method="pageRefund"> 	
+    	<result name="ok">/front/personManage.jsp</result>
+    </action>
+    
+  </package>
+</struts>    

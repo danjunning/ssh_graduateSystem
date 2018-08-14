@@ -1,0 +1,14 @@
+div{border:1px solid #dd0000}
+
+#di1,#dc1{ float: left;height: 100px;}
+#di2,#dc2{ float: left;height: 100px;}
+#di3,#dc3{ float: left;height: 100px;}
+#di4,#dc4{ float: left;height: 100px;}
+
+#duser,#dtran,#dorder,#dpro
+{   float:left;
+    width: 350px;
+    height: 120px;
+    margin-left: 40px;
+    margin-top: 20px;
+}

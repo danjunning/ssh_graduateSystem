@@ -1,0 +1,180 @@
+.web-logo{
+    margin-top: 20px;
+}
+.web-logo .imgae-wrap{
+    margin-left: 100px;
+}
+.order-address-wrap{margin-top: 50px;}
+.order-title{font-size: 16px;margin-left: 100px;width: 1100px;}
+hr{margin-left: 100px;width: 1100px}
+.order-address-wrap .addr-select{
+    border: 1px solid #DDDDDD;
+    margin-left: 100px;
+    width: 1100px;
+}
+.order-prd-wrap{
+    margin-top: 50px;
+}
+.order-prd-wrap .order-prd{
+    border: 1px solid #DDDDDD;
+    margin-left: 100px;
+    width: 1100px;
+}
+
+.or-single{
+    margin-top: 10px;
+    height: 150px;
+    width: 1000px;
+    border: 1px solid #E4EAEE;
+}
+.or-single:hover{
+    border: 1px solid #00BA97;
+}
+.or-header{
+    height: 30px;
+    background-color: #EAF8FF;
+}
+.or-header .sp-date{
+    font-size: 14px;
+}
+.or-header .sp-num{
+    font-size: 14px;
+}
+.or-select,.or-name,.or-img,.or-delete,.or-type,.or-price,.or-detail,.or-operate{
+    margin-top: 2px;
+    float:left;
+}
+
+.or-img img{
+    margin-left: 10px;
+    width: 110px;
+    height: 6rem;
+    border: 1px solid #ffffff ;
+}
+.or-name{
+    margin-left: 10px;
+    width: 250px;
+    height:6rem;
+}
+.or-name a.link-detail{
+    font-size: 13px;
+    font-weight: bold;
+}
+.or-name a.link-detail:hover{
+    color: red;
+}
+.or-type{
+    margin-left: 60px;
+    width: 100px;
+    height:6rem;
+}
+.or-price{
+    margin-left: 20px;
+    width: 120px;
+    height:6rem;
+}
+.count-price{
+    font-size: 13px;
+}
+.or-detail{
+
+    margin-left: 30px;
+    width: 100px;
+    height:6rem;
+}
+.or-detail a:hover{
+    color: red;
+}
+.or-operate{
+
+    margin-left: 40px;
+    width: 130px;
+    height:6rem;
+}
+.submit-wrap{margin-top: 50px}
+.submit-wrap .sub-content{
+
+    margin-left: 100px;
+    width: 1100px;
+}
+.sub-content p,button{
+
+}
+.sub-address p{
+
+}
+.sub-button span{
+    margin-right: 10px;
+    color: #C82121;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 1px;
+}
+.sub-button span,button{
+    float:right;
+}
+.sub-button button.order-sub{
+    border: 1px solid #C82121;
+    width: 140px;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    background-color: #C82121;
+    letter-spacing: 4px;
+    outline:none;
+    cursor:pointer;
+}
+button.order-sub:hover{background-color: #C82121}
+
+
+.footer{
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
+
+}
+
+.foot-on{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 310px;
+}
+.foot-up{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 100px;
+}
+.foot-item{
+    float:left;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-right: 1px solid #DDDDDD;
+    width: 200px;
+    height: 185px;
+}
+
+/*无序列表与列表项消除间距*/
+.foot-item p,ul, li{
+
+    margin: 0px;
+    padding: 0px;
+}
+.foot-item p{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    line-height: 10px;/*行高*/
+    font-weight: bold;
+    font-size: 15px;
+}
+.foot-item li{
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    list-style:none; /*去掉列表项的样式(小圆点)*/
+    line-height: 10px;/*行高*/
+    font-size: 13px;
+}

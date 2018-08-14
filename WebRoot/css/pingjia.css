@@ -1,0 +1,66 @@
+.com-header{
+    margin-top: 2px;
+    font-size:20px;
+    border-bottom: 2px solid #F5F5F5;
+}
+.com-single{
+    height: 95px;
+    margin-top: 5px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom:1px solid #DDDDDD ;
+}
+.eval-content,.eval-time,.eval-product,.eval-operate{
+
+    margin-left: 2px;
+    float:left;
+}
+.eval-content{
+    width: 500px;
+    height:85px;
+}
+.eval-content .sp-content{
+    font-size: 14px;
+}
+.eval-time{
+    margin-left: 20px;
+    width: 200px;
+}
+.eval-time .p-time{
+    font-size: 14px;
+    color: black;
+}
+.eval-product{
+    margin-left: 5px;
+    width: 200px;
+}
+.eval-product .link-pro{
+    color: #0000ff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.eval-product .link-pro:hover{
+    font-size: 14px;
+    color: red;
+    text-decoration: underline;
+}
+.eval-operate{
+
+    margin-left: 40px;
+    font-size: 14px;
+
+}
+.eval-operate a{
+    font-size: 14px;
+    color:#000000 ;
+    text-decoration: none;
+}
+.eval-operate a:hover{
+    font-size: 14px;
+    color: red;
+    text-decoration: underline;
+}
+.com-pages{
+    border: 1px solid #000000;
+    width: 1050px;
+    height: 60px;
+}

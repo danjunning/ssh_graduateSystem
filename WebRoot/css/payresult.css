@@ -1,0 +1,93 @@
+.web-container{border: 1px solid #DDDDDD;}
+.web-logo{
+    
+    margin-top: 20px;
+}
+.web-logo .imgae-wrap{
+    margin-left: 100px;
+}
+.result-wrap{
+    margin-top: 50px;height: 300px;
+    background-color: #FAFAFA;
+    margin-left: 100px;
+    width: 1100px;
+}
+
+.result-wrap .result-msg{
+    margin-top: 15px;
+    border: 1px solid #DDDDDD;
+    width: 1100px;
+    background-color: #FAFAFA;
+}
+.result-msg .tip-msg{
+    line-height: 40px;
+    color: #3FD09E;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+.result-msg .pay-price{
+    line-height: 40px;
+    font-size: 13px;
+    margin-left:20px;
+}
+.result-msg .layui-breadcrumb{
+    line-height: 40px;
+    margin-left:20px;
+}
+
+
+
+
+.footer{
+    border-top: 2px solid #DDDDDD;
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;
+
+}
+
+.foot-on{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 310px;
+}
+.foot-up{
+    margin: 5px;
+    border-bottom: 1px solid #DDDDDD;
+    height: 100px;
+}
+.foot-item{
+    float:left;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-right: 1px solid #DDDDDD;
+    width: 200px;
+    height: 185px;
+}
+
+/*无序列表与列表项消除间距*/
+.foot-item p,ul, li{
+
+    margin: 0px;
+    padding: 0px;
+}
+.foot-item p{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    line-height: 10px;/*行高*/
+    font-weight: bold;
+    font-size: 15px;
+}
+.foot-item li{
+    margin-left: 20px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    list-style:none; /*去掉列表项的样式(小圆点)*/
+    line-height: 10px;/*行高*/
+    font-size: 13px;
+}
